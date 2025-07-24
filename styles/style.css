@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Base Card Wrapper */
+.page-card {
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.nav-header {
+  padding: 1.2em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-header h1 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.nav-header nav a {
+  margin-left: 1em;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #ffffff; /* changed from #007a8c */
+  padding: 1.5em;
+  color: #111; /* changed for better contrast on white */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.hero-text h2 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+.hero-text p {
+  font-size: 0.95em;
+  margin-bottom: 1em;
+}
+
+.hero-text button {
+  padding: 0.6em 1.2em;
+  background-color: white;
+  color: #007a8c;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand-name {
+  color: #007a8c;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 0.5px;
+}
+.full-header {
+  background-color: #007a8c;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+}
+
+.full-header h1 {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.full-header nav a {
+  color: white;
+  margin-left: 1.5em;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.full-header nav a:hover {
+  color: #ffdd57; /* or any hover highlight */
+}
+
+.brand-name {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+
+/* Services Section */
+.services {
+  background-color: #007a8c; /* changed from #f7f7f7 or white */
+  padding: 2em 1.5em;
+  text-align: center;
+  color: white; /* text color adjusted for dark background */
+}
+
+
+.services h2 {
+  margin-bottom: 0.5em;
+}
+
+.services-sub {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 2em;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.service-card {
+  flex: 1 1 100px;
+  max-width: 140px;
+  text-align: center;
+}
+
+.service-card img {
+  height: 40px;
+  margin-bottom: 0.8em;
+}
+
+.service-card h3 {
+  font-size: 0.95em;
+  margin-bottom: 0.5em;
+}
+
+.services-sub {
+  color: #ddd;
+}
+
+.service-card p {
+  color: #eee;
+}
+.service-card .icon {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* Responsive Desktop Enhancements */
+@media (min-width: 768px) {
+  .page-card {
+    max-width: 1200px;
+    border-radius: 18px;
+    margin: 2em auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-section {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    padding: 2em;
+  }
+
+  .hero-text {
+    flex: 1;
+    padding-right: 2em;
+  }
+
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+
+.hero-image img {
+  margin-top: 1.2em;
+  max-width: 100%;
+  border-radius: 0; /* Remove round corners */
+  box-shadow: none; /* Remove white shadow */
+  background: transparent; /* Remove any white background */
+}
+/* Updated: Ensure full screen + no background overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff; /* Match main container */
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Make .page-card fill full screen height */
+.page-card {
+  min-height: 100vh;
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+  .service-card {
+    max-width: 200px;
+  }
+}
